@@ -8,7 +8,7 @@
 
 <AnchorPane prefHeight="761.0" prefWidth="948.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.DeckViewController">
    <children>
-      <HBox layoutX="14.0" layoutY="6.0" prefHeight="243.0" prefWidth="928.0">
+      <HBox layoutX="14.0" layoutY="6.0" prefHeight="213.0" prefWidth="928.0">
          <children>
             <ImageView fx:id="activeCardImageD1" fitHeight="212.0" fitWidth="153.0" pickOnBounds="true" preserveRatio="true" />
             <ImageView fx:id="activeCardImageD2" fitHeight="212.0" fitWidth="153.0" pickOnBounds="true" preserveRatio="true" />
@@ -28,24 +28,6 @@
          </children>
       </HBox>
       <ImageView fx:id="deckImageView" fitHeight="212.0" fitWidth="153.0" layoutX="10.0" layoutY="275.0" pickOnBounds="true" preserveRatio="true" />
-      <TextField fx:id="PlayerHUD" layoutX="10.0" layoutY="496.0" onAction="#getTotalValuePlayer" prefHeight="45.0" prefWidth="928.0" style="-fx-background-color: #060d60;-fx-text-fill: #9e0606">
-         <font>
-            <Font size="24.0" />
-         </font>
-      </TextField>
-      <TextField fx:id="DealerHUD" layoutX="10.0" layoutY="218.0" onAction="#getTotalValueDealer" prefHeight="45.0" prefWidth="928.0" style="-fx-background-color: #060d60;-fx-text-fill: #9e0606">
-         <font>
-            <Font size="24.0" />
-         </font>
-      </TextField>
-      <Button fx:id="stickButton" layoutX="538.0" layoutY="496.0" mnemonicParsing="false" onAction="#stickButtonPushed" prefHeight="45.0" prefWidth="102.0" style="-fx-background-color: #121EC3;" text="Stick" textAlignment="CENTER" textFill="#9e0606">
-         <font>
-            <Font name="System Bold Italic" size="24.0" />
-         </font></Button>
-      <Button fx:id="twistButton" layoutX="327.0" layoutY="496.0" mnemonicParsing="false" onAction="#twistButtonPushed" prefHeight="45.0" style="-fx-background-color: #121EC3;" text="Twist" textFill="#9e0606">
-         <font>
-            <Font name="System Bold Italic" size="24.0" />
-         </font></Button>
       <TextField layoutX="320.0" layoutY="263.0" prefHeight="123.0" prefWidth="308.0" style="-fx-background-color: GREEN;-fx-text-fill: #e3ea09" text="Pontoon">
          <font>
             <Font size="64.0" />
@@ -56,7 +38,7 @@
             <Font size="40.0" />
          </font>
       </TextField>
-      <HBox layoutX="12.0" layoutY="6.0" prefHeight="243.0" prefWidth="928.0" AnchorPane.bottomAnchor="512.0" AnchorPane.leftAnchor="12.0" AnchorPane.rightAnchor="8.0" AnchorPane.topAnchor="6.0">
+      <HBox layoutX="12.0" layoutY="6.0" prefHeight="213.0" prefWidth="928.0" AnchorPane.bottomAnchor="542.0" AnchorPane.leftAnchor="12.0" AnchorPane.rightAnchor="8.0" AnchorPane.topAnchor="6.0">
          <children>
             <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="212.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="2.0" width="148.0" />
             <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="212.0" layoutX="10.0" layoutY="10.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="2.0" width="148.0" />
@@ -65,7 +47,7 @@
             <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="212.0" layoutX="10.0" layoutY="10.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="2.0" width="148.0" />
          </children>
       </HBox>
-      <HBox layoutX="8.0" layoutY="542.0" prefHeight="243.0" prefWidth="928.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="8.0" AnchorPane.rightAnchor="12.0" AnchorPane.topAnchor="542.0">
+      <HBox layoutX="8.0" layoutY="542.0" prefHeight="213.0" prefWidth="928.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="8.0" AnchorPane.rightAnchor="12.0" AnchorPane.topAnchor="542.0">
          <children>
             <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="212.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="2.0" width="148.0" />
             <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="212.0" layoutX="10.0" layoutY="10.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="2.0" width="148.0" />
@@ -74,10 +56,28 @@
             <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="212.0" layoutX="10.0" layoutY="10.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="2.0" width="148.0" />
          </children>
       </HBox>
-      <Button fx:id="playAgainButton" layoutX="798.0" layoutY="496.0" mnemonicParsing="false" onAction="#setPlayAgainButton" prefHeight="45.0" style="-fx-background-color: #121EC3;-fx-text-fill: WHITE" text="Play Again">
+      <TextField fx:id="DealerHUD" layoutX="10.0" layoutY="219.0" onAction="#getTotalValueDealer" prefHeight="45.0" prefWidth="928.0" style="-fx-background-color: #060d60;-fx-text-fill: #9e0606">
          <font>
             <Font size="24.0" />
          </font>
+      </TextField>
+      <TextField fx:id="PlayerHUD" layoutX="10.0" layoutY="496.0" onAction="#getTotalValuePlayer" prefHeight="45.0" prefWidth="928.0" style="-fx-background-color: #060d60;-fx-text-fill: #9e0606">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </TextField>
+      <Button fx:id="playAgainButton" graphicTextGap="2.0" layoutX="798.0" layoutY="496.0" mnemonicParsing="false" onAction="#setPlayAgainButton" prefHeight="45.0" style="-fx-background-color: #121EC3;-fx-text-fill: WHITE" text="Play Again">
+         <font>
+            <Font size="20.0" />
+         </font>
       </Button>
+      <Button fx:id="stickButton" alignment="CENTER" contentDisplay="TOP" layoutX="538.0" layoutY="496.0" mnemonicParsing="false" onAction="#stickButtonPushed" prefHeight="45.0" prefWidth="102.0" style="-fx-background-color: #121EC3;" text="Stick" textAlignment="CENTER" textFill="#9e0606">
+         <font>
+            <Font name="System Bold Italic" size="24.0" />
+         </font></Button>
+      <Button fx:id="twistButton" layoutX="327.0" layoutY="496.0" mnemonicParsing="false" onAction="#twistButtonPushed" prefHeight="45.0" style="-fx-background-color: #121EC3;" text="Twist" textFill="#9e0606">
+         <font>
+            <Font name="System Bold Italic" size="24.0" />
+         </font></Button>
    </children>
 </AnchorPane>
