@@ -3,6 +3,7 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.image.*?>
 <?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
 <?import javafx.scene.text.*?>
 
 <AnchorPane prefHeight="761.0" prefWidth="948.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.DeckViewController">
@@ -12,7 +13,7 @@
             <ImageView fx:id="activeCardImageD1" fitHeight="212.0" fitWidth="153.0" pickOnBounds="true" preserveRatio="true" />
             <ImageView fx:id="activeCardImageD2" fitHeight="212.0" fitWidth="153.0" pickOnBounds="true" preserveRatio="true" />
             <ImageView fx:id="activeCardImageD3" fitHeight="212.0" fitWidth="153.0" pickOnBounds="true" preserveRatio="true" />
-            <ImageView fx:id="activeCardImageD4" fitHeight="213.0" fitWidth="153.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="activeCardImageD4" fitHeight="212.0" fitWidth="153.0" pickOnBounds="true" preserveRatio="true" />
             <ImageView fx:id="activeCardImageD5" fitHeight="212.0" fitWidth="153.0" pickOnBounds="true" preserveRatio="true" />
          </children>
       </HBox>
@@ -32,7 +33,7 @@
          </font>
       </Button>
       <ImageView fx:id="deckImageView" fitHeight="212.0" fitWidth="153.0" layoutX="10.0" layoutY="275.0" pickOnBounds="true" preserveRatio="true" />
-      <TextField fx:id="PlayerHUD" layoutX="10.0" layoutY="488.0" onAction="#getTotalValuePlayer" prefHeight="57.0" prefWidth="928.0" style="-fx-background-color: #060d60;-fx-text-fill: #9e0606">
+      <TextField fx:id="PlayerHUD" layoutX="10.0" layoutY="488.0" onAction="#getTotalValuePlayer" prefHeight="51.0" prefWidth="928.0" style="-fx-background-color: #060d60;-fx-text-fill: #9e0606">
          <font>
             <Font size="24.0" />
          </font>
@@ -42,11 +43,11 @@
             <Font size="24.0" />
          </font>
       </TextField>
-      <Button fx:id="stickButton" layoutX="538.0" layoutY="491.0" mnemonicParsing="false" onAction="#stickButtonPushed" prefHeight="51.0" prefWidth="102.0" style="-fx-background-color: #121EC3;" text="Stick" textFill="#e3ea09">
+      <Button fx:id="stickButton" layoutX="538.0" layoutY="488.0" mnemonicParsing="false" onAction="#stickButtonPushed" prefHeight="51.0" prefWidth="102.0" style="-fx-background-color: #121EC3;" text="Stick" textFill="#9e0606">
          <font>
             <Font size="24.0" />
          </font></Button>
-      <Button fx:id="twistButton" layoutX="326.0" layoutY="491.0" mnemonicParsing="false" onAction="#twistButtonPushed" prefHeight="51.0" prefWidth="102.0" style="-fx-background-color: #121EC3;" text="Twist" textAlignment="CENTER" textFill="#9e0606">
+      <Button fx:id="twistButton" layoutX="327.0" layoutY="488.0" mnemonicParsing="false" onAction="#twistButtonPushed" prefHeight="51.0" prefWidth="102.0" style="-fx-background-color: #121EC3;" text="Twist" textAlignment="CENTER" textFill="#9e0606">
          <font>
             <Font name="System Bold Italic" size="24.0" />
          </font></Button>
@@ -60,5 +61,23 @@
             <Font size="40.0" />
          </font>
       </TextField>
+      <HBox layoutX="12.0" layoutY="6.0" prefHeight="243.0" prefWidth="928.0" AnchorPane.bottomAnchor="512.0" AnchorPane.leftAnchor="12.0" AnchorPane.rightAnchor="8.0" AnchorPane.topAnchor="6.0">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="212.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="2.0" width="148.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="212.0" layoutX="10.0" layoutY="10.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="2.0" width="148.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="212.0" layoutX="10.0" layoutY="10.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="2.0" width="148.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="212.0" layoutX="10.0" layoutY="10.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="2.0" width="148.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="212.0" layoutX="10.0" layoutY="10.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="2.0" width="148.0" />
+         </children>
+      </HBox>
+      <HBox layoutX="8.0" layoutY="542.0" prefHeight="243.0" prefWidth="928.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="8.0" AnchorPane.rightAnchor="12.0" AnchorPane.topAnchor="542.0">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="212.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="2.0" width="148.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="212.0" layoutX="10.0" layoutY="10.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="2.0" width="148.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="212.0" layoutX="10.0" layoutY="10.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="2.0" width="148.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="212.0" layoutX="10.0" layoutY="10.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="2.0" width="148.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="212.0" layoutX="10.0" layoutY="10.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="2.0" width="148.0" />
+         </children>
+      </HBox>
    </children>
 </AnchorPane>
