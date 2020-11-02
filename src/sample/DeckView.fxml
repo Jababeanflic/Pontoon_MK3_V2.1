@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="761.0" prefWidth="948.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.DeckViewController">
+   <children>
+      <HBox layoutX="14.0" layoutY="6.0" prefHeight="243.0" prefWidth="928.0">
+         <children>
+            <ImageView fx:id="activeCardImageD1" fitHeight="212.0" fitWidth="153.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="activeCardImageD2" fitHeight="212.0" fitWidth="153.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="activeCardImageD3" fitHeight="212.0" fitWidth="153.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="activeCardImageD4" fitHeight="213.0" fitWidth="153.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="activeCardImageD5" fitHeight="212.0" fitWidth="153.0" pickOnBounds="true" preserveRatio="true" />
+         </children>
+      </HBox>
+      <HBox layoutX="10.0" layoutY="542.0" prefHeight="213.0" prefWidth="928.0">
+         <children>
+            <ImageView fx:id="activeCardImageP1" fitHeight="212.0" fitWidth="153.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="activeCardImageP2" fitHeight="212.0" fitWidth="153.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="activeCardImageP3" fitHeight="212.0" fitWidth="153.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="activeCardImageP4" fitHeight="212.0" fitWidth="153.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="activeCardImageP5" fitHeight="212.0" fitWidth="153.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="activeCardImageP6" fitHeight="212.0" fitWidth="153.0" pickOnBounds="true" preserveRatio="true" />
+         </children>
+      </HBox>
+      <Button fx:id="playAgainButton" layoutX="800.0" layoutY="443.0" mnemonicParsing="false" onAction="#setPlayAgainButton" text="Play Again">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <ImageView fx:id="deckImageView" fitHeight="212.0" fitWidth="153.0" layoutX="10.0" layoutY="275.0" pickOnBounds="true" preserveRatio="true" />
+      <TextField fx:id="PlayerHUD" layoutX="10.0" layoutY="488.0" onAction="#getTotalValuePlayer" prefHeight="57.0" prefWidth="928.0" style="-fx-background-color: #060d60;-fx-text-fill: #9e0606">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="DealerHUD" layoutX="14.0" layoutY="218.0" onAction="#getTotalValueDealer" prefHeight="45.0" prefWidth="928.0" style="-fx-background-color: #060d60;-fx-text-fill: #9e0606">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </TextField>
+      <Button fx:id="stickButton" layoutX="538.0" layoutY="491.0" mnemonicParsing="false" onAction="#stickButtonPushed" prefHeight="51.0" prefWidth="102.0" style="-fx-background-color: #121EC3;" text="Stick" textFill="#e3ea09">
+         <font>
+            <Font size="24.0" />
+         </font></Button>
+      <Button fx:id="twistButton" layoutX="326.0" layoutY="491.0" mnemonicParsing="false" onAction="#twistButtonPushed" prefHeight="51.0" prefWidth="102.0" style="-fx-background-color: #121EC3;" text="Twist" textAlignment="CENTER" textFill="#9e0606">
+         <font>
+            <Font name="System Bold Italic" size="24.0" />
+         </font></Button>
+      <TextField layoutX="320.0" layoutY="263.0" prefHeight="123.0" prefWidth="308.0" style="-fx-background-color: GREEN;-fx-text-fill: #e3ea09" text="Pontoon">
+         <font>
+            <Font size="64.0" />
+         </font>
+      </TextField>
+      <TextField layoutX="210.0" layoutY="386.0" prefHeight="102.0" prefWidth="528.0" style="-fx-background-color: GREEN;-fx-text-fill: #e3ea09" text="Whats life without a little risk">
+         <font>
+            <Font size="40.0" />
+         </font>
+      </TextField>
+   </children>
+</AnchorPane>
