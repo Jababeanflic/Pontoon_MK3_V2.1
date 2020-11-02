@@ -27,11 +27,6 @@
             <ImageView fx:id="activeCardImageP6" fitHeight="212.0" fitWidth="153.0" pickOnBounds="true" preserveRatio="true" />
          </children>
       </HBox>
-      <Button fx:id="playAgainButton" layoutX="800.0" layoutY="443.0" mnemonicParsing="false" onAction="#setPlayAgainButton" text="Play Again">
-         <font>
-            <Font size="24.0" />
-         </font>
-      </Button>
       <ImageView fx:id="deckImageView" fitHeight="212.0" fitWidth="153.0" layoutX="10.0" layoutY="275.0" pickOnBounds="true" preserveRatio="true" />
       <TextField fx:id="PlayerHUD" layoutX="10.0" layoutY="488.0" onAction="#getTotalValuePlayer" prefHeight="51.0" prefWidth="928.0" style="-fx-background-color: #060d60;-fx-text-fill: #9e0606">
          <font>
@@ -43,13 +38,13 @@
             <Font size="24.0" />
          </font>
       </TextField>
-      <Button fx:id="stickButton" layoutX="538.0" layoutY="488.0" mnemonicParsing="false" onAction="#stickButtonPushed" prefHeight="51.0" prefWidth="102.0" style="-fx-background-color: #121EC3;" text="Stick" textFill="#9e0606">
+      <Button fx:id="stickButton" layoutX="538.0" layoutY="488.0" mnemonicParsing="false" onAction="#stickButtonPushed" style="-fx-background-color: #121EC3;" text="Stick" textAlignment="CENTER" textFill="#9e0606">
          <font>
-            <Font size="24.0" />
+            <Font size="26.0" />
          </font></Button>
-      <Button fx:id="twistButton" layoutX="327.0" layoutY="488.0" mnemonicParsing="false" onAction="#twistButtonPushed" prefHeight="51.0" prefWidth="102.0" style="-fx-background-color: #121EC3;" text="Twist" textAlignment="CENTER" textFill="#9e0606">
+      <Button fx:id="twistButton" layoutX="327.0" layoutY="488.0" mnemonicParsing="false" onAction="#twistButtonPushed" style="-fx-background-color: #121EC3;" text="Twist" textFill="#9e0606">
          <font>
-            <Font name="System Bold Italic" size="24.0" />
+            <Font name="System Bold Italic" size="26.0" />
          </font></Button>
       <TextField layoutX="320.0" layoutY="263.0" prefHeight="123.0" prefWidth="308.0" style="-fx-background-color: GREEN;-fx-text-fill: #e3ea09" text="Pontoon">
          <font>
@@ -79,5 +74,10 @@
             <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="212.0" layoutX="10.0" layoutY="10.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="2.0" width="148.0" />
          </children>
       </HBox>
+      <Button fx:id="playAgainButton" layoutX="798.0" layoutY="491.0" mnemonicParsing="false" onAction="#setPlayAgainButton" style="-fx-background-color: #121EC3;-fx-text-fill: WHITE" text="Play Again">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
    </children>
 </AnchorPane>
